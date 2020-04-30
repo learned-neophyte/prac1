@@ -29,7 +29,7 @@ label{
 /* testimonial */
 
 #testimonial{
-    background-color:#ffe8df;
+    background-color: #844685;
 }
 .carousel-item{
     text-align:center;
@@ -46,9 +46,7 @@ label{
     position: relative;;
 }
 #membership a{
-    position:absolute;
-    top:3%;
-    right:3%;
+    
 }
 
 /* features */
@@ -69,7 +67,7 @@ label{
     width:100%;
     margin:auto;
 }
-    @media (max-width:990px){
+    @media (max-width:995px){
         .testimonial{
             padding:3% 5%;
         }
@@ -90,10 +88,19 @@ label{
     text-align: center;
     margin-bottom:3%;
 }
-.card{
-    margin:3% auto;
+.trail-card{
+    width:80%;
+    margin:7% auto;
+    padding:0;
     border: 1px solid rgba(0, 0, 0, .125);
 }
+    @media (min-width:995px){
+        .trail-card{
+            width:100%;
+            margin:0 auto;
+            height:100%;
+        }
+    }
 .card-img-top{
     width:100%;
 }
@@ -111,11 +118,12 @@ label{
 #socialmedialinks{
     background-color: #fff;
     text-align: center;
+    padding:2%;
 }
 .fab{
     padding:2% 1%;
 }
 #socialmedialinks a{
     color:#343a40;
-    padding:3% 1%;
+    padding:3% 1% 0;
 }
