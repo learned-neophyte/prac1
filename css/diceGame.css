@@ -1,0 +1,42 @@
+h1{
+  font-size:3rem;
+  font-weight: bolder;
+  font-style: oblique;
+  color:#ffe277;
+}
+
+
+body{
+  background-color: #ff5200;
+  color: #6f0000;
+}
+
+#diceGame{
+  text-align:center;
+}
+
+.dice-container{
+    width:40%;
+    display:inline-block;
+}
+  
+  
+.dice{
+    width:60%;
+}
+  
+.btn{
+    display:block;
+    margin:25px auto;
+}
+
+.scoreBoard{
+  width:50%;
+  margin:auto;
+
+}
+
+th.tableHeadP1,th.tableHeadP2{
+  border-bottom:1px solid;
+  padding:3rem;
+}
