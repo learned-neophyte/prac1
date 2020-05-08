@@ -1,15 +1,15 @@
-var player1=prompt("enter player1 name"),
+var player1="player1",player2="player2"; 
+
+player1=prompt("enter player1 name"),
 player2=prompt("enter player2 name");
 
-if(player1.length){
-  $(".player1>h2").text(player1);
-  $("th.tableHeadP1").text(player1);
-}
+$(".player1>h2").text(player1);
+$("th.tableHeadP1").text(player1);
 
-if(player2.length){  
-  $(".player2>h2").text(player2);
-  $(".tableHeadP2").text(player2);
-}
+  
+$(".player2>h2").text(player2);
+$(".tableHeadP2").text(player2);
+
 
 var $dice=["https://cdn.clipart.email/ba685725cfccc78be9477fd253be9933_dice-clipart-homeschool-clipart_900-901.gif",
           "https://cdn.clipart.email/9a01d845f9ffb6ed0cdbdb03869f5c58_dice-clipart-homeschool-clipart_900-901.gif",
