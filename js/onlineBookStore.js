@@ -11,7 +11,7 @@ $(function(){
         
     }
 
-    $.get('/js/imagesURL.json',function(data){
+    $.get('js/imagesURL.json',function(data){
          buildBookCard(data);
     },'json');
 
