@@ -11,7 +11,7 @@ $(function(){
         
     }
 
-    $.get('js/imagesURL.json',function(data){
+    $.get('https://learned-neophyte.github.io/prac1/js/imagesURL.json',function(data){
          buildBookCard(data);
     },'json');
 
