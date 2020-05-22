@@ -1,0 +1,111 @@
+body{
+    background-image:url("../images/Z8bqck.jpg");
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color:#3797a4;
+}
+
+/*===================================================================================== 
+                        navigation bar
+=====================================================================================*/
+
+.navbar{
+    background-color:#3f3f44;
+}
+.navbar-brand{
+    color:#f8f9fa;
+    font-size: 3rem;
+}
+
+/*=====================================================================================
+                        main-visual
+=====================================================================================*/
+
+#mainContent{
+    /* background-color: #cceabb; */
+    padding:0 2%;
+}
+
+/* =====================================================================================
+                        .book css selectors
+=====================================================================================*/
+.book{
+    display: block;
+    position:relative;
+    text-align: center;
+    margin:7% 5%; 
+    background-color:#f7f7f7;
+}
+.book-name{    
+    background-color:#3f3f44;
+    padding:5%;
+    margin-bottom:0;
+    color:#f7f7f7;
+}
+.book-image{
+    position:relative;
+    width:100%; 
+    border:1px solid grey;
+    border-top:none;
+    border-bottom:none;
+}
+    /* @media(max-width:450px){
+        .book-image{
+            transform: rotate(90deg);
+            position:relative;
+            width:100%;
+        }
+    } */
+.book-info{
+    background-color:#f7f7f7;
+    border:1px solid grey;
+    border-top:none;
+    border-bottom:none;
+}
+.book-author{
+    text-decoration: underline;
+    padding-top:7%;
+}
+.book-table{
+    text-align:right;
+    margin:auto;
+    display:none;
+}
+    .showBook-table{
+        display:inline-block;
+    }
+.book-category{
+    padding:1% 0;
+    margin-bottom: 0;
+}
+.book-price{
+    padding:1% 0;
+    margin-bottom: 0;
+}
+/* .book-rating{} */
+.more-info i{
+    display:block;
+    font-size:1.5rem;
+    padding-bottom:3%;
+    width:30%;
+    margin:0 auto;
+}
+    .more-info i:hover{
+        color:#007bff;
+    }
+a.buy-btn{
+    border-radius:0;
+    color:#3f3f44;
+    font-weight: bold;
+    width:100%;
+    margin-top: none;
+}
+    a.buy-btn:hover{
+    color:#f7f7f7;
+    }
