@@ -49,6 +49,7 @@ a:hover{
     color:#f7f7f7;
 }
 .book-image{
+    Width:100%;
     border:1px solid grey;
     border-top:none;
     border-bottom:none;
