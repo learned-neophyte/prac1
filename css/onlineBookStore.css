@@ -58,6 +58,7 @@ a:hover{
     @media(max-width:450px){
         .book-image{
             transform: rotate(90deg);
+            z-index:0;
         }
     }
 .book-info{
