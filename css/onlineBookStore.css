@@ -1,5 +1,5 @@
 body{
-    background-color:#f7f7f7;
+    background-image:url("https://img.wallpapersafari.com/desktop/1366/768/67/19/Jc0Ny2.jpg");
     box-sizing: border-box;
 }
 a{
@@ -19,6 +19,7 @@ a:hover{
     background-color:#3f3f44;
 }
 .navbar-brand{
+    color:#f8f9fa;
     font-size: 3rem;
 }
 
@@ -27,7 +28,7 @@ a:hover{
 =====================================================================================*/
 
 #mainContent{
-    background-color: #cceabb;
+    /* background-color: #cceabb; */
     padding:0 2%;
 }
 
@@ -39,6 +40,7 @@ a:hover{
     position:relative;
     text-align: center;
     margin:7% 5%; 
+    background-color:#f7f7f7;
 }
 .book-name{    
     background-color:#3f3f44;
@@ -53,6 +55,13 @@ a:hover{
     border-top:none;
     border-bottom:none;
 }
+    /* @media(max-width:450px){
+        .book-image{
+            transform: rotate(90deg);
+            position:relative;
+            width:100%;
+        }
+    } */
 .book-info{
     background-color:#f7f7f7;
     border:1px solid grey;
@@ -80,10 +89,14 @@ a:hover{
     margin-bottom: 0;
 }
 /* .book-rating{} */
-.more-info{
-    font-style: oblique;
+.more-info i{
+    display:block;
+    font-size:1.5rem;
+    padding-bottom:3%;
+    width:30%;
+    margin:0 auto;
 }
-    .more-info:hover{
+    .more-info i:hover{
         color:#007bff;
     }
 a.buy-btn{
@@ -91,7 +104,7 @@ a.buy-btn{
     color:#3f3f44;
     font-weight: bold;
     width:100%;
-    margin-bottom:1%;
+    margin-top: none;
 }
     a.buy-btn:hover{
     color:#f7f7f7;
