@@ -42,9 +42,6 @@ a:hover{
     margin:7% 5%; 
     background-color:#f7f7f7;
 }
-.book a{
-    position:relative;
-}
 .book-name{    
     background-color:#3f3f44;
     padding:5%;
@@ -52,9 +49,7 @@ a:hover{
     color:#f7f7f7;
 }
 .book-image{
-    position:relative;
-    left:0px;
-    top:7%;
+    display:block;
     width:100%;
     border:1px solid grey;
     border-top:none;
