@@ -1,5 +1,4 @@
-$(function(){
-  
+
   function Book(imgName,name,author,category,price,rating){
     this.imgName=imgName;
     this.name=name;
@@ -24,19 +23,21 @@ $(function(){
           '</a>'+
           '<div class="book-info">'+
             '<p class="book-author"><strong><a href="#">- '+book[i].author+'</a></strong></p>'+
-            '<table class="book-table">'+             
-              '<tr class="book-category"><th><small>Category:</small></th> <td><a href="#">'+book[i].category+'</a></td></p>'+
-              '<tr class="book-price"><th><small>Price:</small></th> <td>$'+book[i].price+'</td></tr>'+
-              '<p class="book-rating"><th><small>Rating:</small></th> <td>'+book[i].rating+'</td></tr>'+
-            '</table>'+
-            '<a href="#" class="more-info"><small>show more</small></a></div>'+
-            '<a class="btn btn-outline-dark buy-btn">Buy</a>'+
+            '<div class="more-info">'+
+              '<table class="book-table">'+             
+                '<tr class="book-category"><th><small>Category:</small></th> <td><a href="#">'+book[i].category+'</a></td></p>'+
+                '<tr class="book-price"><th><small>Price:</small></th> <td>$'+book[i].price+'</td></tr>'+
+                '<p class="book-rating"><th><small>Rating:</small></th> <td>'+book[i].rating+'</td></tr>'+
+              '</table>'+
+              '<i class="fas fa-ellipsis-h"></i>'+
+            '</div>'+
           '</div>'+
+          '<a class="btn btn-outline-dark buy-btn">Buy</a>'+
+        '</div>'+
       '</div>'
       );
     }
   }
-     
   // creating books:-
   var book=[];
   book[0]=new Book("IMG_20200515_092520833","A Brief History Of Time",
@@ -104,21 +105,14 @@ $(function(){
 
   book[21]=new Book("IMG_20200515_093413848","Cash Flow Quadrant",
   "RobertT.Kyosaki","Finance",7.1,4.5);
-  
-  // adding book array to .book in div tag
-  addToBook(book);
-   
-  
-  // showing/hiding more details
-  $(".more-info").on("click",function(){
-    if($(".more-info").text()=="show more"){
-      $(".more-info").text("show less");
-    }
-    else{
-      $(".more-info").text("show more");
-    }
-    $(this).siblings(".book-table").toggleClass("showBook-table");
+
+
+  $(document).on("click",".more-info",function(e){
+    console.log(e.currentTarget);
+    $(".book-table").toggleClass("showBook-table");
   });
 
+  // adding book array to .book in div tag
+  addToBook(book);
 
-});
+  
