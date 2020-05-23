@@ -55,13 +55,13 @@ a:hover{
     border-top:none;
     border-bottom:none;
 }
-     @media(max-width:450px){
+/*      @media(max-width:450px){
         .book-image{
             transform: rotate(90deg);
             position:relative;
             width:100%;
         }
-    } 
+    }  */
 .book-info{
     background-color:#f7f7f7;
     border:1px solid grey;
