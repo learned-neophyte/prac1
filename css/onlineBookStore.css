@@ -55,13 +55,13 @@ a:hover{
     border-top:none;
     border-bottom:none;
 }
-    /* @media(max-width:450px){
+     @media(max-width:450px){
         .book-image{
             transform: rotate(90deg);
             position:relative;
             width:100%;
         }
-    } */
+    } 
 .book-info{
     background-color:#f7f7f7;
     border:1px solid grey;
@@ -100,12 +100,13 @@ a:hover{
         color:#007bff;
     }
 a.buy-btn{
+    padding:5%;
     border-radius:0;
     color:#3f3f44;
     font-weight: bold;
     width:100%;
     margin-top: none;
-}
+}  
     a.buy-btn:hover{
     color:#f7f7f7;
     }
