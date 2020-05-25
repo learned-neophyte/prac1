@@ -14,7 +14,7 @@
   function addToBook(book){
     for(var i=0;i<book.length;i++){
 
-      var container=$(".row");
+      var container=$(".home-page");
 
       container.append('<div class="col-lg-3 col-md-4 col-sm-6">'+
         '<div class="book">'+
@@ -26,7 +26,8 @@
             '<p class="book-author"><strong><a href="#">- '+book[i].author+'</a></strong></p>'+
             '<div class="more-info">'+
               '<table class="book-table">'+             
-                '<tr class="book-category"><th><small>Category:</small></th> <td><a href="#">'+book[i].category+'</a></td></p>'+
+                '<tr class="book-category"><th><small>Category:</small></th> <td><a '+
+                'href="html/category.html" target="blank">'+book[i].category+'</a></td>'+
                 '<tr class="book-price"><th><small>Price:</small></th> <td>$'+book[i].price+'</td></tr>'+
                 '<p class="book-rating"><th><small>Rating:</small></th> <td>'+book[i].rating+'</td></tr>'+
               '</table>'+
