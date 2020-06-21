@@ -4,6 +4,8 @@ body{
     padding: 0;
     text-align: center;
     scroll-behavior: smooth;
+    font-family: 'Cousine', monospace;
+    overflow-x: hidden;
 }
 h1{
     font-size: 2rem;
@@ -22,16 +24,13 @@ h1{
 #home{
     background: url("../images/PSX_20200620_093428.jpg");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    width: 100vw;
     height:100vh;
     position: relative;
     padding: 0;
     margin-bottom: 0;
 }
-    @media(max-width:1060px){
-
-    }
 
 /* -----------Navigation-----------*/
 nav{
@@ -39,37 +38,29 @@ nav{
     background: #000;
 }
 ul.navigation{
-    display: flex;
     float: right;
 }
-.navigation-items{
+.navigation-item{
     list-style: none;
     float:left;
     text-transform: uppercase;
     font-weight: bold;
 }
-.navigation-items a{
+.navigation-item a{
     color:#fff;
     text-decoration: none;
     padding:1rem 1.5rem;
 }
-.navigation-items a:hover{
+.navigation-item a:hover{
     color:#fff;
     text-decoration: underline;
 }
 
 /*------------ name and profile-------- */
 .about{
-    position:relative;
-    top:60vh;
-    right:35%;
-    margin-right: 2rem;
+    margin-top:45vh;
+    width:415px;
 }
-    @media(max-width:1060px){
-        .about{
-
-        }
-    }
 .name,.profile{
     display: block;
     margin: auto;
@@ -79,19 +70,36 @@ ul.navigation{
     color: #fff;
 }
 .name{
-    width:300px;
+    width:400px;
+    font-size:2.6rem;
 }
 .profile{
-    width:255px;
+    width:235px;
     margin-top:0.4rem;
     padding: 0;
+}
+@media(max-width:890px){
+    .about{
+        width: 100%;
+        margin-top: 75vh;
+    }
+    .name{
+        width: 370px;
+        font-size: 2.2rem;
+    }
+}
+h1.animate__fadeInUp{
+    animation-delay:1150ms;
+}
+h3.animate__fadeInUp{
+    animation-delay: 1950ms;
 }
 /* ==================================================================================
             ABOUT
 ===================================================================================*/
 #about{
     padding: 0;
-    margin-top: 0;
+    margin: 0;
     background:#000;
     color:#fff;
 }
@@ -102,22 +110,50 @@ ul.navigation{
 }
 #about h1{
     text-transform: uppercase;
-    margin-bottom:8rem;
+    margin-bottom:6rem;
+    opacity:0;
 }
 table.info{
+    display: block;
+    padding: 0;
     width: 80%;
     margin:auto;
 }
 .info th,.info td{
-    padding:20px;
+    padding:5% 2%;
 }
 .info th{
     text-transform: capitalize;
-    font-size:1.55rem;
+    font-size:1.4rem;
+    opacity: 0;
 }
 .info td{
-    font-size: 1.3rem;
+    font-size: 1.15rem;
+    opacity:0;
 }
 .info td a{
     color:#fff;
 } 
+    @media(max-width:890px){
+        table.info{
+        
+        }
+        .info th{
+            font-size:1rem;
+        }
+        .info td{
+
+            font-size: 0.75rem;
+        }
+    }    
+    @media(max-width:725px){
+        .info th,.info td{
+            padding:3% 1%;
+        }
+        .info th{
+            font-size:0.75rem;
+        }
+        .info td{
+            font-size:0.5rem;
+        }
+    }    
