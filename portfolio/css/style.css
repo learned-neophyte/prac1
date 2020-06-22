@@ -22,7 +22,7 @@ h1{
             HOME
 ===================================================================================*/
 #home{
-    background: url("../images/PSX_20200620_093428.jpg");
+    background: url("../images/ratio16x9.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,11 +31,21 @@ h1{
     padding: 0;
     margin-bottom: 0;
 }
+    @media(max-width:800px){
+        #home{
+            background: url("../images/mobile version.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height:100vh;
+        }
+    }
 
 /* -----------Navigation-----------*/
 nav{
     color: #fff;
     background: #000;
+    padding: 0;
 }
 ul.navigation{
     float: right;
@@ -46,20 +56,46 @@ ul.navigation{
     text-transform: uppercase;
     font-weight: bold;
 }
+.navigation-item.animate__animated{
+    animation-delay:1000ms;
+}
 .navigation-item a{
     color:#fff;
     text-decoration: none;
-    padding:1rem 1.5rem;
+    padding:0 1.5rem;
 }
 .navigation-item a:hover{
     color:#fff;
     text-decoration: underline;
 }
+    @media(max-width:800px){
+        nav{
+            padding: 0;
+        }
+        ul.navigation{
+            float: none;
+            margin:auto;
+            display: grid;
+            padding: 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .navigation-item{
+            display: block;
+            float: none;
+            padding:0.5rem 0;
+        }
+        .navigation-item a{
+            color:#fff;
+            text-decoration: none;
+            padding:0 0.75rem;
+        }
+    }
 
 /*------------ name and profile-------- */
 .about{
     margin-top:45vh;
-    width:415px;
+    width:420px;
+    /* border: 1px solid pink; */
 }
 .name,.profile{
     display: block;
@@ -78,21 +114,28 @@ ul.navigation{
     margin-top:0.4rem;
     padding: 0;
 }
-@media(max-width:890px){
-    .about{
-        width: 100%;
-        margin-top: 75vh;
+    @media(max-width:890px){
+        .about{
+            width: 100%;
+            margin-top: 85vh;
+        }
+        .name{
+            width: 370px;
+            font-size: 2.2rem;
+        }
     }
-    .name{
-        width: 370px;
-        font-size: 2.2rem;
+    @media(max-width:800px){
+        .about{
+            width: 100%;
+            margin-top: 80vh;
+        }
     }
+
+h1.animate__animated{
+    animation-delay:2000ms;
 }
-h1.animate__fadeInUp{
-    animation-delay:1150ms;
-}
-h3.animate__fadeInUp{
-    animation-delay: 1950ms;
+h3.animate__animated{
+    animation-delay: 2700ms;
 }
 /* ==================================================================================
             ABOUT
@@ -102,15 +145,18 @@ h3.animate__fadeInUp{
     margin: 0;
     background:#000;
     color:#fff;
+    position: relative;
 }
 #about::before{
     content:" ";
     display: block;
     height:10px;
 }
-#about h1{
+.heading{
     text-transform: uppercase;
-    margin-bottom:6rem;
+    margin:4rem auto;
+    width:200px;
+    border-bottom: 1px solid #fff;
     opacity:0;
 }
 table.info{
@@ -118,25 +164,26 @@ table.info{
     padding: 0;
     width: 80%;
     margin:auto;
-}
-.info th,.info td{
-    padding:5% 2%;
+    height:80vh;
 }
 .info th{
     text-transform: capitalize;
     font-size:1.4rem;
+    margin:auto 1%;
+    padding:5% 2% 3%;
     opacity: 0;
 }
 .info td{
     font-size: 1.15rem;
     opacity:0;
+    padding:5% 2%;
 }
 .info td a{
     color:#fff;
 } 
     @media(max-width:890px){
         table.info{
-        
+            height: 60vh;
         }
         .info th{
             font-size:1rem;
@@ -146,9 +193,17 @@ table.info{
             font-size: 0.75rem;
         }
     }    
-    @media(max-width:725px){
+    @media(max-width:800px){
+        .heading{
+            font-size: 1.5rem;
+            width:150px;
+        }
+        table.info{
+            width:100%;
+            height:auto;
+        }
         .info th,.info td{
-            padding:3% 1%;
+            padding:7% 1%;
         }
         .info th{
             font-size:0.75rem;
